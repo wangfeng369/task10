@@ -1,0 +1,491 @@
+<!Doctype html>
+<html>
+<head>
+	<title>流程图</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="maximum-scale=1.0;minimum-scale=1.0;user-scalable=0,initial-scale=1.0;width=device-width";>
+<style type="text/css">
+body,html{margin: 0;font-size: 62.5%;width: 100%;min-width: 300px;background-color: #fafafa;}
+p{margin: 0;}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+margin: 0;
+padding: 0;
+}
+body{font-size:62.5%;background-color: #fafafa;min-width: 20rem;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.header{
+	background-color: #1d7ad9;	
+
+}
+.header1{
+	display: flex;
+
+}
+.headerleft{
+	display: flex;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	flex:9;
+}
+.headerright{
+	display: flex;
+	align-items: center;
+	flex: 2;
+	justify-content: center;
+}
+.headerbutton{
+	color: white;
+	border-left: 0.1rem solid white;
+	background-color: transparent; 
+}
+.navigation{
+
+}
+.navbar-nav{
+	text-align: center;
+}
+.nav-default{
+
+}
+.nav a{
+	text-decoration: none;
+	color: black !important ;
+	font-weight: bold;
+
+}
+.btn{
+	margin: 3rem;
+	background-color: white;
+}
+.nav li :hover{
+	background-color: #1d7ad9;
+
+}
+.nav li :hover a{
+	color: white !important;
+}
+.contain{
+	
+}
+.contain1{
+	background-color: white;
+}
+.containtop{
+	display: flex;
+}
+.containtopright{
+	display: flex;
+
+}
+.containtopleft{
+}
+.box1{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+.line{
+	border-radius: 0;
+	display: flex;
+	align-items: center;
+}
+.line1,.line2,.line3,.line4{
+	background-color: gray;
+	width: 100%;
+	height: 0.3rem;
+	border-radius: 1rem 1rem;
+	display: flex;
+	align-items: center;
+}
+.circle{
+	background-color: gray;
+	width:1rem;
+	height: 1rem;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.lineorange{
+	background-color: orange;
+	width: 100%;
+	height: 0.3rem;
+	border-radius: 1rem 1rem;
+	display: flex;
+	align-items: center;
+}
+
+
+.number {
+	color: gray;
+}
+
+.box1:hover .line1{background-color: orange;}
+.box1:hover .line2{background-color: orange;}
+.box1:hover .line3{background-color: orange;}
+.box1:hover .line4{background-color: orange;}
+.box1:hover .circle{background-color: orange;}
+.box1:hover .number p{color: orange;}
+
+
+.containcenter{
+
+}
+.containcentertop{
+	background-color: white;
+}
+.containcentertop1{
+	display: flex;
+	padding: 2rem;
+
+}
+.rectangle{
+	width: 0.5rem;
+	height: 2rem;
+	border-radius:5px 5px;
+	background-color:#1d7ad9; 
+}
+.please{
+	color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.containcentercenter{
+	border:0.1rem solid lightgrey;
+	display: flex;
+	flex-direction: column;
+}
+.containcentercentertop{
+	display: flex;
+
+}
+.containcentercentertoptop{
+	display: flex;
+	align-items: center;
+}
+.choose{
+	color: #1d7ad9;
+	font-size: 1.5rem;
+}
+.containcentercentertopbottom{
+	background-color: white;
+	border-top: 0.1rem solid lightgrey;
+	border-bottom: 0.1rem solid lightgrey;
+	display: flex;
+	align-items: center;
+	padding: 2%;
+}
+.containcentercentertopbottomleft{
+
+}
+.containcentercentertopbottomright{
+
+}
+.select1{
+	float: right;
+}
+.inputbox{
+	width: 4rem;
+}
+.box0{
+	padding: 0;
+}
+.bottom{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+.next{
+
+}
+.next a {
+	color: white;
+	text-decoration:none;	
+}
+.nextbtn{
+	background-color:#d9534f !important;
+}
+.footer{
+	padding-top: 2%;
+}
+.footer1{
+
+}
+.graycolor{
+	color: gray;
+	font-size: 1.2rem;
+}
+@media screen and (max-width: 1024px){.erweima{zoom:0.5;}}
+
+@media screen and (min-width: 768px){.colplease{width: 20%;}.please{font-size: 1rem;}}
+
+select{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	background:url(images/selectdown.png) no-repeat;
+	background-position: right 0;
+	padding-right: 14px;
+	background-size: 15px 17px
+
+}
+input[type="radio"]{
+	opacity: 0;
+}
+label{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 10px;
+	top: 3px;
+	border-radius: 50%;
+	background-color: white;
+	border:1px solid #666;
+
+}
+input:checked+label{
+	border: 6px solid blue;
+
+}
+</style>
+</head>
+<body>
+	<div class="header container">
+		<div class="header1 row">
+			<div class="headerleft hidden-xs col-xs-12">客服电话：400-810-9195</div>
+			<div class="headerright col-xs-12">
+				<button class="headerbutton">登录</button>
+				<button class="headerbutton">注册</button>
+				</div>
+			</div>
+		</div>
+	<div class="navigation">
+		<div class="navbar container navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsemenu">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="collapsemenu">
+				<ul class="nav navbar-nav">
+					<li><button class="btn"><a href="#">首页</a></button></li>
+					<li><button class="btn"><a href="#">在线定制</a></button></li>
+					<li><button class="btn"><a href="#">标准箱</a></button></li>
+					<li><button class="btn"><a href="#">品质保障</a></button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="contain ">
+		<div class="contain1 container">
+			<div class="containtop row">
+				<div class="containtopleft col-sm-12 hidden-xs">
+					</div>
+				<div class="containtopright col-xs-12">
+					<div class="box1">
+					<div class="line">
+						<div class="line1"></div>
+						<div class="circle">1</div>
+						<div class="line1"></div>
+					</div>
+					<div class="number"><p>1.定制纸箱</p></div>
+				</div>
+				<div class="box1">
+					<div class="line">
+						<div class="line2"></div>
+						<div class="circle">2</div>
+						<div class="line2"></div>
+					</div>
+					<div class="number"><p>2.选择数量</p></div>
+				</div>
+				<div class="box1">
+					<div class="line">
+						<div class="line3"></div>
+						<div class="circle">3</div>
+						<div class="line3"></div>
+					</div>
+					<div class="number"><p>3.上传文件</p></div>
+				</div>
+				<div class="box1">
+					<div class="line">
+						<div class="line4"></div>
+						<div class="circle">4</div>
+						<div class="line4"></div>
+					</div>
+					<div class="number"><p>4.确认下单</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			<div class="containcenter container">
+				<div class="containcentertop row">
+					<div class="containcentertop1 col-xs-12">
+						<div class="rectangle"></div>
+						<div class="please"><strong>请您按照以下步骤来定制您的纸箱</strong></div>
+					</div>
+				</div>
+			    <div class="containcentercenter row">
+			    	<div class="containcentercentertoptop col-xs-12">
+			    		<img  src="images/choose.png">
+			    		<div class="choose">选择箱型</div>
+			    	</div>
+			    	<div class="containcentercentertopbottom">
+			    	<div class="containcentercentertopbottomleft col-xs-8 col-sm-8">
+			    		<div class="col-sm-4 col-xs-12">
+			    		<input type="radio" name="radio" id="r1" ><label for="r1"></label><span class="please">对口箱</span>
+			    		</div>
+			    		<div class="col-sm-4 col-xs-12">
+			    		<input type="radio" name="radio" id="r2" ><label for="r2"></label><span class="please">飞机盒</span>
+			    		</div>
+			    		<div class="col-sm-4 col-xs-12">
+			    		<input type="radio" name="radio" id="r3" ><label for="r3"></label><span class="please">天地盖</span>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="containcentercentertopbottomright col-xs-4 col-sm-4">
+			    		<select class="select1">
+			    			<option>查看详情1</option>
+			    			<option>查看详情2</option>
+			    			<option>查看详情3</option>
+			    			<option>查看详情4</option>
+			    		</select>
+			    	</div>
+			    </div>
+			
+			<div class="containcentercentertoptop col-xs-12">
+			    		<img  src="images/confirm.png">
+			    		<div class="choose">确认箱型</div>
+			    	</div>
+			    <div class="containcentercentertopbottom">
+			    	<div class="containcentercentertopbottomleft col-xs-8 col-sm-8 ">
+			    		
+			    		<div class="col-xs-12 col-sm-6 col-md-12 box0">
+			    			<div class="col-md-3"><input type="radio" name="radio1" id="r4"><label for="r4"></label><span class="please">外径</span></div>
+			    			<div class="col-md-3 "><span class="please">长</span><input type="text" name="nothing" class="inputbox"><span class="please">mm</span></div>
+			    			<div class="col-md-3 "><span class="please">宽</span><input type="text" name="nothing" class="inputbox"><span class="please">mm</span></div>
+			    			<div class="col-md-3 "><span class="please">高</span><input type="text" name="nothing" class="inputbox"><span class="please">mm</span></div>
+			    		</div>
+			    		<div class="col-xs-12 col-sm-6 col-md-12 box0">
+			    			<div class="col-md-3 "><input type="radio" name="radio1" id="r5"><label for="r5"></label><span class="please">内径</span></div>
+			    			<div class="col-md-3 "><span class="please">长</span><input type="text" name="nothing" class="inputbox"><span class="please">mm</span></div>
+			    			<div class="col-md-3 "><span class="please">宽</span><input type="text" name="nothing" class="inputbox"><span class="please">mm</span></div>
+			    			<div class="col-md-3 "><span class="please">高</span><input type="text" name="nothing" class="inputbox"><span class="please">mm</span></div>
+			    		</div>
+			    	
+			    	</div>
+			    	<div class="containcentercentertopbottomright  col-xs-4 col-sm-4 ">
+			    		<select class="select1">
+			    			<option>查看详情1</option>
+			    			<option>查看详情2</option>
+			    			<option>查看详情3</option>
+			    			<option>查看详情4</option>
+			    		</select>
+			    	</div>
+			    </div>
+		 <div class="containcentercentertoptop col-xs-12">
+			    		<img  src="images/cut.png">
+			    		<div class="choose">选择材质</div>
+			    	</div>
+			    <div class="containcentercentertopbottom">
+			    	<div class="containcentercentertopbottomleft col-xs-10 col-sm-10">
+			    		<div class="col-sm-2 col-xs-12 colplease">
+			    		<input type="radio" name="radio2" id="r6" ><label for="r6"></label><span class="please">A瓦优质</span>
+			    		</div>
+			    		<div class="col-sm-2 col-xs-12 colplease">
+			    		<input type="radio" name="radio2" id="r7" ><label for="r7"></label><span class="please">B瓦优质</span>
+			    		</div>
+			    		<div class="col-sm-2 col-xs-12 colplease">
+			    		<input type="radio" name="radio2" id="r8" ><label for="r8"></label><span class="please">E瓦优质</span>
+			    		</div>
+			    		<div class="col-sm-2 col-xs-12 colplease">
+			    		<input type="radio" name="radio2" id="r8" ><label for="r9"></label><span class="please">AB瓦优质</span>
+			    		</div>
+			    		<div class="col-sm-2 col-xs-12 colplease">
+			    		<input type="radio" name="radio2" id="r8" ><label for="r10"></label><span class="please">BE瓦优质</span>
+			    		</div>
+			    	</div>
+			    	
+			    	<div class="containcentercentertopbottomright col-xs-2 col-sm-2">
+			    		<select class="select1">
+			    			<option>查看详情1</option>
+			    			<option>查看详情2</option>
+			    			<option>查看详情3</option>
+			    			<option>查看详情4</option>
+			    		</select>
+			    	</div>
+			    </div>
+			<div class="bottom col-xs-12">
+				<div class="next">
+					<button class="btn btn-lg btn-danger nextbtn "><a href="#"><strong>下一步</strong></a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer container">
+		<div class="footer1 row">
+			<div class="col-sm-2 ">
+				<div class="graycolor">51包装网-纸箱包装首选服务平台</div>
+			</div>
+			<div class="col-sm-2 ">
+				<div class="graycolor">关于我们</div>
+			</div>
+			<div class="col-sm-2 ">
+				<div class="graycolor">下单说明</div>
+			</div>
+			<div class="col-sm-3 ">
+				<div class="graycolor"></div>
+			</div>
+			<div class="col-sm-2 ">
+				<div class="graycolor">TEL:400-810-9151</div>
+			</div>
+			<div class="col-sm-1 ">
+				<div class="erweima"><img src="images/erweima.png"></div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
